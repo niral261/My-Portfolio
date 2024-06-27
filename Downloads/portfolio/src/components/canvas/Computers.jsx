@@ -4,33 +4,38 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
 const Computers = ({ isMobile }) => {
-  const computer = useGLTF("./desktop_pc/scene.gltf");
+  const { scene, error } = useGLTF("./desktop_pc/scene.gltf");
+
+  if (error) {
+    console.error("Error loading GLTF model:", error);
+    return null;
+  }
 
   return (
-  <mesh>
-    <hemisphereLight intensity={2} groundColor="violet" />
-    <pointLight intensity={2} position={[0, 10, 10]} />
-    <spotLight
-      position={[50, 10, 100]}
-      angle={0.5}
-      penumbra={1}
-      intensity={2}
-    />
-    <ambientLight intensity={0.8} />
-    <directionalLight 
-      intensity={2} 
-      position={[10, 10, 10]} 
-      shadow-mapSize-width={1024}
-      shadow-mapSize-height={1024}
-      castShadow
-    />
-    <primitive
-      object={computer.scene}
-      scale={isMobile ? 0.7 : 0.75}
-      position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
-      rotation={[0,0,0]}
-    />
-  </mesh>
+    <mesh>
+      <hemisphereLight intensity={0.6} groundColor="violet" />
+      <pointLight intensity={1} position={[0, 10, 10]} />
+      <spotLight
+        position={[50, 10, 100]}
+        angle={0.5}
+        penumbra={1}
+        intensity={1}
+      />
+      <ambientLight intensity={0.5} />
+      <directionalLight 
+        intensity={1} 
+        position={[10, 10, 10]} 
+        shadow-mapSize-width={1024}
+        shadow-mapSize-height={1024}
+        castShadow
+      />
+      <primitive
+        object={scene}
+        scale={isMobile ? 0.7 : 0.75}
+        position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
+        rotation={[0, 0, 0]}
+      />
+    </mesh>
   );
 };
 
