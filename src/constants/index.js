@@ -5,10 +5,7 @@ import {
     creator,
     javascript,
     java,
-    html,
-    css,
     reactjs,
-    tailwind,
     nodejs,
     mongodb,
     git,
@@ -17,8 +14,6 @@ import {
     piersight_space,
     chat,
     spotify_youtube,
-    threejs,
-    kubernetes,
     kaizen,
     blog,
     plasma,
@@ -28,7 +23,7 @@ import {
     cpp,
     fastapi,
     aws,
-    celery,
+    doodle,
   } from "../assets";
   
   export const navLinks = [
@@ -67,14 +62,6 @@ import {
   
   const technologies = [
     {
-      name: "HTML 5",
-      icon: html,
-    },
-    {
-      name: "CSS 3",
-      icon: css,
-    },
-    {
       name: "JavaScript",
       icon: javascript,
     },
@@ -87,10 +74,6 @@ import {
       icon: reactjs,
     },
     {
-      name: "Tailwind CSS",
-      icon: tailwind,
-    },
-    {
       name: "Node JS",
       icon: nodejs,
     },
@@ -99,20 +82,12 @@ import {
       icon: mongodb,
     },
     {
-      name: "Three JS",
-      icon: threejs,
-    },
-    {
       name: "git",
       icon: git,
     },
     {
       name: "docker",
       icon: docker,
-    },
-    {
-      name: "kubernetes",
-      icon: kubernetes,
     },
     {
       name: "Redis",
@@ -137,10 +112,6 @@ import {
     {
       name: "AWS",
       icon: aws,
-    },
-    {
-      name: "Celery",
-      icon: celery,
     },
   ];
   
@@ -287,6 +258,27 @@ import {
       ],
       image: plasma,
       source_code_link: "https://github.com/niral261/Plasma-2024/tree/master",
+    },
+    {
+      name: "Doodle",
+      description:
+        "Project Doodle is a fast-paced, interactive multiplayer web game where players join custom rooms to draw and guess words in real-time. Engineered with a scalable WebSocket backend, it ensures seamless, lag-free synchronization of the drawing canvas, and live chat across concurrent users.",
+      tags: [
+        {
+          name: "React",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Node.js",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Socket.io",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: doodle,
+      source_code_link: "https://github.com/niral261/Doodle",
     },
   ];
   

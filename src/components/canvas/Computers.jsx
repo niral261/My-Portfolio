@@ -22,9 +22,9 @@ const Computers = ({ isMobile }) => {
         intensity={1}
       />
       <ambientLight intensity={0.5} />
-      <directionalLight 
-        intensity={1} 
-        position={[10, 10, 10]} 
+      <directionalLight
+        intensity={1}
+        position={[10, 10, 10]}
         shadow-mapSize-width={1024}
         shadow-mapSize-height={1024}
         castShadow
@@ -44,7 +44,7 @@ const ComputersCanvas = () => {
 
   useEffect(() => {
     const mediaQuery = window.matchMedia("(max-width: 500px)");
-    setIsMobile(mediaQuery.matches);    
+    setIsMobile(mediaQuery.matches);
     const handleMediaQueryChange = (event) => {
       setIsMobile(event.matches);
     };

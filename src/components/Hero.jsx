@@ -36,54 +36,6 @@ const Hero = () => {
           </div>
         </div>
         <ComputersCanvas />
-        <div className="hidden lg:flex absolute top-1/4 left-2/3 w-[155px] h-[155px] flex justify-center items-start">
-          <div className="w-[100px] h-[100px] rounded-full border-x-4 border-[#83B4FF] flex justify-center p-2">
-            <motion.div
-              initial={{ y: 35 }}
-              animate={{ x: [-25, 40, -25] }}
-              transition={{ duration: 5, repeat: Infinity, repeatType: 'reverse' }}
-              className="w-3 h-3 rounded-full bg-white mb-1"
-            />
-            <motion.div
-              initial={{ x: -5 }}
-              animate={{ y: [0, 65, 0] }}
-              transition={{ duration: 5, repeat: Infinity, repeatType: 'reverse' }}
-              className="w-3 h-3 rounded-full bg-white mb-1"
-            />
-          </div>
-        </div>
-        <div className="hidden lg:flex absolute top-1/2 end-52 w-[155px] h-[155px] flex justify-center items-start">
-          <div className="w-[100px] h-[100px] rounded-2xl border-y-4 border-[#83B4FF] flex justify-center p-2">
-            <motion.div
-              initial={{ y: 35 }}
-              animate={{ x: [-25, 40, -25] }}
-              transition={{ duration: 5, repeat: Infinity, repeatType: 'reverse' }}
-              className="w-3 h-3 rounded-full bg-white mb-1"
-            />
-            <motion.div
-              initial={{ x: -5 }}
-              animate={{ y: [0, 65, 0] }}
-              transition={{ duration: 5, repeat: Infinity, repeatType: 'reverse' }}
-              className="w-3 h-3 rounded-full bg-white mb-1"
-            />
-          </div>
-        </div>
-        <div className="hidden lg:flex absolute top-1/4 right-20 w-[155px] h-[155px] flex justify-center items-start">
-          <div className="w-[100px] h-[100px] rounded-full border-x-4 border-[#83B4FF] flex justify-center p-2">
-            <motion.div
-              initial={{ y: 35 }}
-              animate={{ x: [-25, 40, -25] }}
-              transition={{ duration: 5, repeat: Infinity, repeatType: 'reverse' }}
-              className="w-3 h-3 rounded-full bg-white mb-1"
-            />
-            <motion.div
-              initial={{ x: -5 }}
-              animate={{ y: [0, 65, 0] }}
-              transition={{ duration: 5, repeat: Infinity, repeatType: 'reverse' }}
-              className="w-3 h-3 rounded-full bg-white mb-1"
-            />
-          </div>
-        </div>
       </section>
     </>
   );
