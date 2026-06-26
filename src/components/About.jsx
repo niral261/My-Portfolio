@@ -7,7 +7,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
 
 const ServiceCard = ({ index, title, icon }) => (
-  
+
   <Tilt className='xs:w-[250px] w-full'>
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
@@ -40,16 +40,16 @@ const About = () => {
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] text-justify'
       >
-      As a final-year student with a robust background in MERN stack development,
-      Android app creation, and an affinity for DevOps practices, I am well-versed 
-      in crafting innovative solutions to multifaceted challenges. Proficient in 
-      Java, I bring a depth of experience and skill to the table, coupled with a 
-      strong foundation in Data Structures and Algorithms. With a thirst for knowledge 
-      and a passion for collaboration, I eagerly embrace new technologies and thrive on 
-      the opportunity to tackle complex problems head-on. Let's join forces to turn your 
-      ideas into impactful realities!
+        As an M.Tech CSE student at IIIT Hyderabad—having secured AIR 104 in the PGEE—with
+        a robust ICT foundation from PDEU, I have a strong background in building scalable
+        backends, full-stack web development, and cloud computing. Drawing on my professional
+        internships at ISRO and Piersight, I am well-versed in crafting innovative solutions
+        to multifaceted challenges while continuously exploring the realms of AI and ML. With
+        a growing curiosity for quantum computing and a passion for collaboration, I eagerly
+        embrace new technologies and thrive on the opportunity to tackle complex problems
+        head-on. Let's join forces to turn your ideas into impactful realities!
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
